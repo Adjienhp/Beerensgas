@@ -1,0 +1,133 @@
+// Import Style
+@import '../style.less';
+
+#leasing {
+    padding: 100px 0;
+    background: @ghost-white;
+    
+    .leasing-wrapper {
+        display: flex;
+        
+        // Responsive
+        @media (max-width: 767px){
+            display: block;
+        }
+        
+        .leasing-list {
+            padding: 0 12px;
+            
+            .icon {
+                display: flex;
+                
+                svg {
+                    flex: none;
+                    margin-right: 16px;
+                }
+            }
+
+            .desc{
+                height: 162px;
+
+                // Responsive
+                @media (max-width: 768px){
+                    height: 248px;
+                }
+                @media (max-width: 767px){
+                    height: unset;
+                }
+            }
+        }
+    }
+}
+
+// Our Services
+#leasing-services {
+    padding: 100px 0;
+    
+    .leasing-process {
+        display: flex;
+        
+        // Responsive
+        @media (max-width: 1024px){
+            overflow: scroll;
+        }
+        @media (max-width: 767px){
+            display: block;
+            overflow: unset;
+        }
+        
+        .process-wrapper {
+            padding: 12px;
+            
+            .process {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                
+                .number {
+                    width: 24px;
+                    height: 24px;
+                    background: #00D1DE;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                
+                .pattern {
+                    width: 168px;
+                    border: 2px dashed #00D1DE;
+                    opacity: 0.5;
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+// Services Management
+#services-management {
+    padding: 100px 0;
+    position: relative;
+    
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .title-wrapper {
+        background: #1150AB;
+        padding: 32px;
+        position: absolute;
+        bottom: 0;
+        left: 120px;
+        width: 40%;
+        
+        // Responsive
+        @media (max-width: 768px){
+            width: 60%;
+        }
+        @media (max-width: 767px){
+            position: relative;
+            width: 100%;
+            left: 0;
+            margin-top: 24px;
+        }
+        
+        h5 {
+            font-weight: 400;
+        }
+        
+        a {
+            display: inline-block;
+            margin-top: 32px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+
+            aside{
+                position: absolute;
+            }
+        }
+    }
+}

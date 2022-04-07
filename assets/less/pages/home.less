@@ -1,0 +1,122 @@
+@import '../style.less';
+
+// Header
+#hero {
+    padding: 155px 0;
+    background-image: url('../../images/bg-header.png');
+    background-size: cover;
+    
+    .hero-text {
+        width: 60%;
+        
+        // Responsive
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        
+        p {
+            
+            // Responsive
+            @media (max-width: 767px) {
+                margin-bottom: 24px !important;
+            }
+        }
+    }
+}
+
+// Provide Service
+#provide {
+    padding: 100px 0;
+    
+    .title-wrapper{
+        margin-bottom: 64px;
+    }
+}
+
+// About Us
+#about {
+    padding: 222px 0 100px;
+    background-image: url('../../images/bg-about.png');
+    background-size: cover;
+    
+    // Responsive
+    @media (max-width: 767px) {
+        padding: 100px 0;
+    }
+    
+    .text-wrapper {
+        margin-bottom: @space72;
+    }
+    
+    .content-wrapper {
+        background: linear-gradient(107.19deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.04) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(24px);
+        border-radius: 16px;
+        padding: @space24 @space32;
+        
+        // Responsive
+        @media (max-width: 768px) {
+            margin-bottom: 24px;
+        }
+        
+        .icon {
+            margin-bottom: 16px;
+        }
+        
+        .desc{
+            height: 132px;
+            
+            // Responsive
+            @media (max-width: 1024px){
+                height: unset;
+            }
+        }
+    }
+}
+
+// Tanks
+#tanks {
+    padding: 100px 0;
+    
+    .our-tanks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 66px;
+        
+        // Responsive
+        @media (max-width: 768px) {
+            display: block;
+        }
+        
+        .title-wrapper {
+            width: 50%;
+            
+            // Responsive
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+        
+        .cta {
+            a {
+                &:hover {
+                    svg {
+                        path {
+                            stroke: #fff;
+                            transition: all .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .icon {
+        img {
+            width: 100%;
+        }
+    }
+}

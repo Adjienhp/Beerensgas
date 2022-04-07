@@ -1,0 +1,138 @@
+// Font
+@font-face{
+    font-family: 'HelveticaNeue-Medium';
+    src: url('../../font/helveticaNeue/HelveticaNeue-Medium.ttf');
+}
+@font-face{
+    font-family: 'Open Sauce Sans';
+    src: url('../../font/openSauceSans/OpenSauceSans-Regular.ttf');
+}
+
+@fontFamily: 'Manrope', sans-serif;
+.font {
+    font-family: 'HelveticaNeue-Medium';
+}
+.font2 {
+    font-family: 'Open Sauce Sans';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: @fontFamily;
+}
+
+
+h1 {
+    font-family: @fontFamily;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 68px;
+    color: @highEmphasis;
+
+    // Responsive
+    @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+h2 {
+    font-family: @fontFamily;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: @highEmphasis;
+
+    // Responsive
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+h3 {
+    font-family: @fontFamily;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: @highEmphasis;
+}
+
+h4 {
+    font-family: @fontFamily;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    
+    // Responsive
+    @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+h5 {
+    font-family: @fontFamily;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: @highEmphasis;
+}
+
+h6 {
+    font-family: @fontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @highEmphasis;
+}
+
+p {
+    font-family: @fontFamily;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: @lowEmphasis;
+}
+
+.body-1{
+    font-size: 72px;
+    line-height: 84px;
+
+    // Responsive
+    @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+.body-2{
+    font-size: 24px;
+    line-height: 36px;
+}
+.body-3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.body-4{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+.body-5{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+.body-6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+address{
+    font-family: Helvetica Neue;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @black;
+}
